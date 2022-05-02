@@ -1,0 +1,36 @@
+.grid-botoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 10px;
+}
+
+.grid-botoes button{
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+div.tela{
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+align-items: flex-start;
+  height: 100%;
+  background-color: #cccc;
+ flex-direction: column;
+  width: 260px;
+}
+
+div.tela h1{
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+  height: 20px;
+} 
+
+div.tela h2{
+  font-size: calc(10px + 1vmin);
+}
