@@ -9,7 +9,7 @@
   background-color: #282c34;
   color: white;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
@@ -20,9 +20,9 @@ div.tela{
   justify-content: center;
 align-items: flex-start;
   height: 100%;
-  background-color: #cccc;
- flex-direction: column;
-  width: 260px;
+  background-color: #739592;
+flex-direction: column;
+  width: 300px;
 }
 
 div.tela h1{
@@ -33,4 +33,8 @@ div.tela h1{
 
 div.tela h2{
   font-size: calc(10px + 1vmin);
+}
+  
+div.app{
+  background-color: aqua;
 }

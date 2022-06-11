@@ -1,5 +1,6 @@
 import useCalc from "./hooks/useCalc";
 import "./Calculadora.css";
+import swal from "sweetalert";
 
 
 function Calculadora() {

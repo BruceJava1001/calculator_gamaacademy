@@ -1,6 +1,8 @@
+import { swal } from 'sweetalert';
+import { react } from '@vitejs/plugin-react';
 import {useState} from 'react';
 import useEventListener from "@use-it/event-listener";
-
+//Importei minha regra de negocios para useCalc para separar os componentes
 const useCalc = () => {
   const [valorTela, setValorTela] = useState("");
   const [resultado, setResultado] = useState("0");
@@ -52,15 +54,15 @@ const useCalc = () => {
     { digito: "AC", fn:() => limparTela() },
     { digito: "(", fn: () => adicionarDigitoNaTela("(") },
     { digito: ")", fn: () => adicionarDigitoNaTela(")") },
+    { digito: "+", fn: () => adicionarDigitoNaTela("+") },
+    { digito: "-", fn: () => adicionarDigitoNaTela("-") },
     { digito: "/", fn: () => adicionarDigitoNaTela("/") },
     { digito: "7", fn: () => adicionarDigitoNaTela("7") },
     { digito: "8", fn: () => adicionarDigitoNaTela("8") },
     { digito: "9", fn: () => adicionarDigitoNaTela("9") },
-    { digito: "*", fn: () => adicionarDigitoNaTela("*") },
     { digito: "4", fn: () => adicionarDigitoNaTela("4") },
     { digito: "5", fn: () => adicionarDigitoNaTela("5") },
     { digito: "6", fn: () => adicionarDigitoNaTela("6") },
-    { digito: "-", fn: () => adicionarDigitoNaTela("-") },
     { digito: "1", fn: () => adicionarDigitoNaTela("1") },
     { digito: "2", fn: () => adicionarDigitoNaTela("2") },
     { digito: "3", fn: () => adicionarDigitoNaTela("3") },
@@ -103,8 +105,10 @@ const useCalc = () => {
       return;
     }
 
-    alert("Não é valido!!!");
+  alert("Ops, somente números aqui!!!");
   });
+
+
 
   return{calcKey, valorTela, resultado};
 }
