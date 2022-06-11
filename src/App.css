@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  border: 2mm ridge rgba(10, 71, 34, 0.77); 
+
 }
 
 .App-logo {
@@ -38,5 +40,5 @@
 }
 
 button {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 3vmin);
 }
